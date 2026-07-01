@@ -186,3 +186,10 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^
 AttributeError: 'Chat' object has no attribute 'id'
 
+2026-07-01 15:22:36,395 | ERROR | on_message | 'Chat' object has no attribute 'id'
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 216, in on_message
+    db.add_group(message.chat.id)
+                 ^^^^^^^^^^^^^^^
+AttributeError: 'Chat' object has no attribute 'id'
+
