@@ -1,27 +1,6 @@
-2026-06-30 10:10:09,410 | ERROR | on_message | InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
+2026-07-01 11:19:17,857 | ERROR | on_message | Bad Request: message to be replied not found
 Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 107, in on_message
-    keyboard = InlineKeyboardMarkup([
-               ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-
-2026-06-30 10:13:44,358 | ERROR | on_message | InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 105, in on_message
-    keyboard = InlineKeyboardMarkup([
-               ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-
-2026-06-30 10:27:15,262 | ERROR | on_message | InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 106, in on_message
-    keyboard = InlineKeyboardMarkup([
-               ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-
-2026-06-30 10:27:49,988 | ERROR | on_message | Bad Request: message to be replied not found
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 115, in on_message
+  File "C:\Users\RC\building-bot\main.py", line 126, in on_message
     await message.reply(
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
     return await self.bot.send_message(self.chat_id, text, components=components,
@@ -37,9 +16,15 @@ Traceback (most recent call last):
     raise obj(self.description)
 bale.error.BadRequest: Bad Request: message to be replied not found
 
-2026-06-30 10:28:31,733 | ERROR | on_message | Bad Request: message to be replied not found
+2026-07-01 11:25:44,738 | ERROR | on_message | Database.add_user() takes 6 positional arguments but 7 were given
 Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 115, in on_message
+  File "C:\Users\RC\building-bot\main.py", line 162, in on_message
+    db.add_user(
+TypeError: Database.add_user() takes 6 positional arguments but 7 were given
+
+2026-07-01 11:45:32,785 | ERROR | on_message | Bad Request: message to be replied not found
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 122, in on_message
     await message.reply(
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
     return await self.bot.send_message(self.chat_id, text, components=components,
@@ -55,186 +40,149 @@ Traceback (most recent call last):
     raise obj(self.description)
 bale.error.BadRequest: Bad Request: message to be replied not found
 
-2026-06-30 10:31:25,029 | ERROR | on_message | InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
+2026-07-01 11:55:36,081 | ERROR | on_message | components param must be type of Components or RemoveComponents
 Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 108, in on_message
-    keyboard = InlineKeyboardMarkup([
-               ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-
-2026-06-30 10:32:04,389 | ERROR | on_message | Bad Request: message to be replied not found
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 115, in on_message
+  File "C:\Users\RC\building-bot\main.py", line 80, in on_message
     await message.reply(
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
     return await self.bot.send_message(self.chat_id, text, components=components,
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 427, in send_message
-    response = await self._http.send_message(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 417, in send_message
+    raise TypeError(
+TypeError: components param must be type of Components or RemoveComponents
+
+2026-07-01 11:55:49,410 | ERROR | on_message | components param must be type of Components or RemoveComponents
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 80, in on_message
+    await message.reply(
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
+    return await self.bot.send_message(self.chat_id, text, components=components,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 417, in send_message
+    raise TypeError(
+TypeError: components param must be type of Components or RemoveComponents
+
+2026-07-01 11:58:46,474 | ERROR | on_message | components param must be type of Components or RemoveComponents
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 80, in on_message
+    await message.reply(
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
+    return await self.bot.send_message(self.chat_id, text, components=components,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 417, in send_message
+    raise TypeError(
+TypeError: components param must be type of Components or RemoveComponents
+
+2026-07-01 12:04:43,607 | ERROR | on_message | components param must be type of Components or RemoveComponents
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 80, in on_message
+    await message.reply(
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
+    return await self.bot.send_message(self.chat_id, text, components=components,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 417, in send_message
+    raise TypeError(
+TypeError: components param must be type of Components or RemoveComponents
+
+2026-07-01 12:04:58,825 | ERROR | on_message | components param must be type of Components or RemoveComponents
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 80, in on_message
+    await message.reply(
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
+    return await self.bot.send_message(self.chat_id, text, components=components,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 417, in send_message
+    raise TypeError(
+TypeError: components param must be type of Components or RemoveComponents
+
+2026-07-01 12:06:10,552 | ERROR | on_message | InlineKeyboardButton.__init__() got an unexpected keyword argument 'request_contact'
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 72, in on_message
+    InlineKeyboardButton(
+TypeError: InlineKeyboardButton.__init__() got an unexpected keyword argument 'request_contact'
+
+2026-07-01 12:08:50,553 | ERROR | on_message | Database.add_user() takes 6 positional arguments but 7 were given
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 133, in on_message
+    db.add_user(
+TypeError: Database.add_user() takes 6 positional arguments but 7 were given
+
+2026-07-01 12:10:03,503 | ERROR | on_message | Database.add_user() missing 1 required positional argument: 'phone'
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 109, in on_message
+    db.add_user(
+TypeError: Database.add_user() missing 1 required positional argument: 'phone'
+
+2026-07-01 12:12:04,351 | ERROR | on_message | Database.add_user() missing 1 required positional argument: 'phone'
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 109, in on_message
+    db.add_user(
+TypeError: Database.add_user() missing 1 required positional argument: 'phone'
+
+2026-07-01 12:15:20,883 | ERROR | on_message | Database.add_user() takes 6 positional arguments but 7 were given
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 133, in on_message
+    db.add_user(
+TypeError: Database.add_user() takes 6 positional arguments but 7 were given
+
+2026-07-01 12:18:31,542 | ERROR | on_message | Database.add_user() missing 1 required positional argument: 'phone'
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 109, in on_message
+    db.add_user(
+TypeError: Database.add_user() missing 1 required positional argument: 'phone'
+
+2026-07-01 12:43:37,848 | ERROR | get_chat_administrators | Bad Request: no such group or user
+Traceback (most recent call last):
+  File "C:\Users\RC\building-bot\main.py", line 67, in on_message
+    admins = await bot.get_chat_administrators(GROUP_ID)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 1447, in get_chat_administrators
+    response = await self._http.get_chat_administrators(params=handle_request_param(dict(chat_id=str(chat_id))))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 168, in request
     raise error
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 149, in request
     response.get_error()
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\parser.py", line 59, in get_error
     raise obj(self.description)
-bale.error.BadRequest: Bad Request: message to be replied not found
+bale.error.NotFound: Bad Request: no such group or user
 
-2026-06-30 10:33:28,504 | ERROR | on_message | InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
+2026-07-01 12:46:45,662 | ERROR | get_chat_administrators | Bad Request: no such group or user
 Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 105, in on_message
-    keyboard = InlineKeyboardMarkup([
-               ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: InlineKeyboardMarkup.__init__() takes 1 positional argument but 2 were given
-
-2026-06-30 10:35:48,616 | ERROR | on_message | 'Database' object has no attribute 'get_user'
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 98, in on_message
-    data = db.get_user(user_id) or {}
-           ^^^^^^^^^^^
-AttributeError: 'Database' object has no attribute 'get_user'
-
-2026-06-30 10:41:51,042 | ERROR | callback | 'Bot' object has no attribute 'get_me'
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 149, in on_callback
-    me = await bot.get_me()
-               ^^^^^^^^^^
-AttributeError: 'Bot' object has no attribute 'get_me'
-
-2026-06-30 10:47:39,953 | ERROR | on_message | Bad Request: message to be replied not found
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 114, in on_message
-    await message.reply(
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
-    return await self.bot.send_message(self.chat_id, text, components=components,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 427, in send_message
-    response = await self._http.send_message(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\building-bot\main.py", line 66, in on_message
+    admins = await bot.get_chat_administrators(GROUP_ID)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 1447, in get_chat_administrators
+    response = await self._http.get_chat_administrators(params=handle_request_param(dict(chat_id=str(chat_id))))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 168, in request
     raise error
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 149, in request
     response.get_error()
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\parser.py", line 59, in get_error
     raise obj(self.description)
-bale.error.BadRequest: Bad Request: message to be replied not found
+bale.error.NotFound: Bad Request: no such group or user
 
-2026-06-30 10:50:15,569 | ERROR | on_message | Bad Request: message to be replied not found
+2026-07-01 12:47:06,922 | ERROR | get_chat_administrators | Bad Request: no such group or user
 Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 114, in on_message
-    await message.reply(
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
-    return await self.bot.send_message(self.chat_id, text, components=components,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 427, in send_message
-    response = await self._http.send_message(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\building-bot\main.py", line 66, in on_message
+    admins = await bot.get_chat_administrators(GROUP_ID)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 1447, in get_chat_administrators
+    response = await self._http.get_chat_administrators(params=handle_request_param(dict(chat_id=str(chat_id))))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 168, in request
     raise error
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 149, in request
     response.get_error()
   File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\parser.py", line 59, in get_error
     raise obj(self.description)
-bale.error.BadRequest: Bad Request: message to be replied not found
+bale.error.NotFound: Bad Request: no such group or user
 
-2026-06-30 10:51:52,600 | ERROR | on_message | Cannot connect to host tapi.bale.ai:443 ssl:default [The semaphore timeout period has expired]
+2026-07-01 13:40:03,028 | ERROR | on_message | 'Chat' object has no attribute 'id'
 Traceback (most recent call last):
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\connector.py", line 980, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1113, in create_connection
-    transport, protocol = await self._create_connection_transport(
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1146, in _create_connection_transport
-    await waiter
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
-    length = fut.result()
-             ^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 854, in _poll
-    value = callback(transferred, key, ov)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 494, in finish_recv
-    return ov.getresult()
-           ^^^^^^^^^^^^^^
-OSError: [WinError 121] The semaphore timeout period has expired
+  File "C:\Users\RC\building-bot\main.py", line 201, in on_message
+    db.add_group(message.chat.id)
+                 ^^^^^^^^^^^^^^^
+AttributeError: 'Chat' object has no attribute 'id'
 
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 136, in request
-    async with self.__session.request(method=method, url=url, **kwargs) as original_response:
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
-    self._resp = await self._coro
-                 ^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 536, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\connector.py", line 540, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\connector.py", line 1209, in _create_direct_connection
-    raise last_exc
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\connector.py", line 1178, in _create_direct_connection
-    transp, proto = await self._wrap_create_connection(
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\connector.py", line 988, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host tapi.bale.ai:443 ssl:default [The semaphore timeout period has expired]
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 113, in on_message
-    await message.reply(
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\message.py", line 199, in reply
-    return await self.bot.send_message(self.chat_id, text, components=components,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 427, in send_message
-    response = await self._http.send_message(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 162, in request
-    raise NetworkError(str(error))
-bale.error.NetworkError: Cannot connect to host tapi.bale.ai:443 ssl:default [The semaphore timeout period has expired]
-
-2026-06-30 11:31:03,080 | ERROR | callback | 'CallbackQuery' object has no attribute 'answer'
-Traceback (most recent call last):
-  File "C:\Users\RC\building-bot\main.py", line 157, in on_callback
-    await callback.answer("\U0001f4e5 \u062f\u0631 \u062d\u0627\u0644 \u0627\u0646\u062a\u0642\u0627\u0644 \u0628\u0647 \u067e\u06cc\u0648\u06cc")
-          ^^^^^^^^^^^^^^^
-AttributeError: 'CallbackQuery' object has no attribute 'answer'
-
-2026-06-30 12:10:23,480 | ERROR | Exception happened when polling for updates.
-Traceback (most recent call last):
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 136, in request
-    async with self.__session.request(method=method, url=url, **kwargs) as original_response:
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
-    self._resp = await self._coro
-                 ^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 560, in _request
-    await resp.start(conn)
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client_reqrep.py", line 894, in start
-    with self._timer:
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\helpers.py", line 721, in __exit__
-    raise asyncio.TimeoutError from None
-TimeoutError
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\updater.py", line 117, in _network_loop_retry
-    if not await action_cb():
-           ^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\updater.py", line 93, in action_getupdates
-    raise exc
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\updater.py", line 91, in action_getupdates
-    updates = await self.bot.get_updates(offset=self._last_offset)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\bot.py", line 1562, in get_updates
-    response = await self._http.get_updates(params=handle_request_param(dict(offset=offset, limit=limit)))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\RC\AppData\Local\Programs\Python\Python311\Lib\site-packages\bale\request\http.py", line 170, in request
-    raise HTTPException(error)
-bale.error.HTTPException
